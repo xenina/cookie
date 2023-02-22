@@ -6,29 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie</title>
     <style>
-			#btn {border-color:white;}
-			body {text-align:center;}
+			
+
+			#styleBtn {display: flex;
+				flex-direction: column;
+				margin: 800px;
+    			margin-top:-300px;
+				font-weight: 700;
+  				font-size: 20px;
+			}
+
+			#btn2 {margin-bottom: 20px;
+				font-weight: 700;
+  				font-size: 15px;
+				border-radius: 10px;
+				background-color: yellowgreen;
+				width: 130px;
+				height:40px}
+
+			#btn4 {margin-bottom: 20px;
+				font-weight: 700;
+  				font-size: 15px;
+				border-radius: 10px;
+				background-color: yellowgreen;
+				width: 130px;
+				height:40px}
+
+			#btn1 {display: flex;
+				flex-direction: center;
+				margin: 0 auto;
+				margin-left: 150px;
+				border-color:orange;
+			}
+			body{text-align: center;}
+
+			.Cookie {margin-top: 50px;
+			margin-right:700px;
+			font-weight: 700;
+  			font-size: 40px;}
+
+			*{background-color: orange;}
+
 			
 		</style>
-<script>
-		let counter = 0;
-		function incrementCounter(){
-             counter+=1;
-            console.log(counter);
-		    document.getElementById("counter").innerHTML=counter;
-        };
-</script>
+<script src="code.js" defer></script>
 
 </head>
 <body>
     <p>
 		<h1>Пекарня Bearded Sock</h1>
-		<p>
+		<p class="Cookie">
 		ПЕЧЕНЬЯ:<span id="counter">0</span>
 		</p>
-	</p>	
-	
-		<button id="btn" onclick="incrementCounter()"><img src="img/печенька2.png" width="900px" height="700px"></button>
 
+		<button id="btn1"><img src="img/cookie.png" width="500px"></button>
+
+		<div id="styleBtn">
+		<p id="Boost">Бусты: </p>
+	
+		<button id="btn2">+2</button>
+		<button id="btn4">+4</button>
+		</div>
+	  
 </body>
 </html>
